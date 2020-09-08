@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Grid, Button, Typography, Paper, Container } from '@material-ui/core';
+import { Grid, Button, Typography, Paper, Container, IconButton } from '@material-ui/core';
+import Mail from '@material-ui/icons/Mail';
+import Call from '@material-ui/icons/Call';
+import Update from '@material-ui/icons/Update';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -8,6 +11,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Resumen of Jose Jaime Figueroa</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
@@ -19,23 +23,43 @@ export default function Home() {
           </Link> */}
         </h1>
 
-        <p className={styles.description}>
-          Jose Jaime Figueroa Barrios <code className={styles.code}>pages/index.js</code>
-        </p>
+        <p className={styles.description}>Jose Jaime Figueroa Barrios {/* <code className={styles.code}>pages/index.js</code> */}</p>
         <Grid container spacing={1}>
-
-        </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={6}>
-            Last Updated: September 2020
+          <Grid item xs={12} sm={6} lg={3} xl={3}>
+            <Typography align='center'>
+              <Button color='inherit'>
+                <Mail />
+                jaimefigueroa84@gmail.com
+              </Button>
+            </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <Typography align='right'>
+          <Grid item xs={12} sm={6} lg={3} xl={3}>
+            <Typography align='center'>
+              <Button color='inherit'>
+                <Call />
+                +52 656 301 91 67
+              </Button>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={3} xl={3}>
+            <Typography align='center'>
+              <Button>
+                <Update />
+                Updated: September 2020
+              </Button>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={3} xl={3}>
+            <Typography align='center'>
               <Button color='default' variant='contained' size='small'>
                 Download Resume
               </Button>
             </Typography>
           </Grid>
+        </Grid>
+        <Grid container spacing={2}>
+          <Grid item xs={6}></Grid>
+          <Grid item xs={6}></Grid>
         </Grid>
         <div className={styles.details}>
           <h4 className={styles.detail__title}>Profile</h4>
@@ -68,17 +92,7 @@ export default function Home() {
                 <Paper elevation={5} style={{ padding: '1rem' }}>
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
-                      <h3>Recruiter &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
-                    </a>
-                  </Link>
-                </Paper>
-              </Grid>
-              <Grid item xs={12} sm={6} lg={4} xl={4}>
-                <Paper elevation={5} style={{ padding: '1rem' }}>
-                  <Link href='https://nextjs.org/docs'>
-                    <a className={styles.card}>
-                      <h3>ScanPack &rarr;</h3>
+                      <h3>HR-Recruiter &rarr;</h3>
                       <p>Find in-depth information about Next.js features and API.</p>
                     </a>
                   </Link>
@@ -89,6 +103,16 @@ export default function Home() {
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
                       <h3>HR-Training &rarr;</h3>
+                      <p>Find in-depth information about Next.js features and API.</p>
+                    </a>
+                  </Link>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} sm={6} lg={4} xl={4}>
+                <Paper elevation={5} style={{ padding: '1rem' }}>
+                  <Link href='https://nextjs.org/docs'>
+                    <a className={styles.card}>
+                      <h3>ScanPack &rarr;</h3>
                       <p>Find in-depth information about Next.js features and API.</p>
                     </a>
                   </Link>
