@@ -11,11 +11,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Resumen of Jose Jaime Figueroa</title>
-        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <img src='images/JJFB-4.jpg' style={{ width: 100, margin: '1rem', border: 'solid 2px #f3f3f3', borderRadius: '100%' }} />
+        <img src='images/17651-1.jpg' style={{ width: 100, margin: '1rem', border: 'solid 2px #f3f3f3', borderRadius: '100%' }} />
         <h1 className={styles.title}>
           Software Engineer
           {/* <Link href='https://nextjs.org'>
@@ -52,7 +51,9 @@ export default function Home() {
           <Grid item xs={12} sm={6} lg={3} xl={3}>
             <Typography align='center'>
               <Button color='default' variant='contained' size='small'>
-                Download Resume
+                <a href='static/Resumen of JJFigueroa.pdf' target='_blank' className='btn btn-sm btn-default' download>
+                  Download Resume
+                </a>
               </Button>
             </Typography>
           </Grid>
@@ -61,39 +62,64 @@ export default function Home() {
           <Grid item xs={6}></Grid>
           <Grid item xs={6}></Grid>
         </Grid>
-        <div className={styles.details}>
-          <h4 className={styles.detail__title}>Profile</h4>
-          <div className={styles.detail__description}>
+        <Grid container direction='column'>
+          <Grid item>
+            <h4 className={styles.detail__title}>Profile</h4>
+          </Grid>
+          <Grid item>
+            {/* <div className={styles.detail__description}> */}
             <p>Why do I like Programming?</p>
             <p>Creating systems means evolving, and I like to be part of the evolution, give something to the world.</p>
             <p>
-              That's why I'm trying to get involved in projects that implicate developing programs with the purpose of practicing and
-              continuing to learn new technologies.
+              That's why I'm trying to get involved in projects that implicate developing programs with the purpose of improve the quality
+              life in the world.
             </p>
-          </div>
-        </div>
+
+            {/* </div> */}
+          </Grid>
+        </Grid>
         <div className={styles.details}>
           <h4 className={styles.detail__title}>What you get?</h4>
           <div className={styles.detail__description}>
-            <p>These are the benefits that you get when add software into your company:</p>
-            <p> * Procesos digitales que resultan en datos inmediatos para la toma de deciciones.</p>
-            <p>Creating systems means evolving, and I like to be part of the evolution, give something to the world.</p>
+            <p>There is a lot of benefits when you add software into your company, for example:</p>
             <p>
-              That's why I'm trying to get involved in projects that implicate developing programs with the purpose of practicing and
-              continuing to learn new technologies.
+              Thru the software I have the capability to convert the traditional processes "paper formats" into a digital process. In the
+              software industry they call CRUD apps.
+            </p>
+            <p>
+              When we have those process on digital we can use a business intelligence to manage the data on real time dashboard with our
+              KPI's.
             </p>
           </div>
         </div>
+        <Grid container direction='column'>
+          <Grid item>
+            <h4 className={styles.detail__title}>Work experience</h4>
+          </Grid>
+          <Grid item>
+            {/* <div className={styles.detail__description}> */}
+            <p>Woodhead de Mexico a Divition of Molex</p>
+            <p>Starts on Jan 2018 - Current</p>
+            <p>
+              As a Software Engineer I am responsible for improve the currents manual processes into a digital process with the members of
+            </p>
+            <p>different departments on site, with the purpose to generate digital data, so they can take decisions on time.</p>
+            {/* <Typography variant=''>Portfolio of Achievements</Typography> */}
+
+            {/* </div> */}
+          </Grid>
+        </Grid>
         <div className={styles.details}>
-          <h4 className={styles.detail__title}>Portafolio</h4>
+          <h4 className={styles.detail__title}>Portfolio of Achievements</h4>
           <Container style={{ maxWidth: 1100 }}>
-            <Grid container spacing={3} direction='row' justify='space-evenly' alignItems='center' style={{ marginTop: '1rem' }}>
+            <Grid container spacing={2} direction='row' justify='space-evenly' alignItems='center' style={{ marginTop: '1rem' }}>
               <Grid item xs={12} sm={6} lg={4} xl={4}>
                 <Paper elevation={5} style={{ padding: '1rem' }}>
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
-                      <h3>HR-Recruiter &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
+                      <h3>Automation in SAP with VBA (Macros in Excel) &rarr;</h3>
+                      <p>-</p>
+                      <p>-</p>
                     </a>
                   </Link>
                 </Paper>
@@ -103,7 +129,7 @@ export default function Home() {
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
                       <h3>HR-Training &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
+                      <p>This system track and maintain the critical trainings for production operations.</p>
                     </a>
                   </Link>
                 </Paper>
@@ -113,7 +139,7 @@ export default function Home() {
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
                       <h3>ScanPack &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
+                      <p>Its a system used to reduce QNs on production packing process, it has real time dashboard for KPIs.</p>
                     </a>
                   </Link>
                 </Paper>
@@ -123,7 +149,8 @@ export default function Home() {
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
                       <h3>MRO Inventory &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
+                      <p>This system resolves the inventory control for Tool Crib.</p>
+                      <p>_</p>
                     </a>
                   </Link>
                 </Paper>
@@ -133,7 +160,7 @@ export default function Home() {
                   <Link href='https://nextjs.org/docs'>
                     <a className={styles.card}>
                       <h3>Visitor Badges &rarr;</h3>
-                      <p>Find in-depth information about Next.js features and API.</p>
+                      <p>This is a electronic records for visitors, and is required for legal entities in Mexico.</p>
                     </a>
                   </Link>
                 </Paper>
@@ -142,56 +169,28 @@ export default function Home() {
           </Container>
         </div>
         <div className={styles.details}>
-          <h4 className={styles.detail__title}>Career</h4>
+          <h4 className={styles.detail__title}>Career and Certifications</h4>
           <div className={styles.detail__description}>
             <p>
               <Link href='http://tecmilenio.mx/'>
-                <a target='_blank'>"Ingeniero en Desarrollo de Software" at Universidad TecMilenio Ciuda Juárez</a>
+                <a target='_blank'>"Ingeniero en Desarrollo de Software" at Universidad TecMilenio Ciudad Juárez</a>
               </Link>
             </p>
-            <p>Why do I like Programming?</p>
-            <p>Creating systems means evolving, and I like to be part of the evolution, give something to the world.</p>
-            <p>
-              That's why I'm trying to get involved in projects that implicate developing programs with the purpose of practicing and
-              continuing to learn new technologies.
-            </p>
+            <p>Javascript Certs</p>
+            <p></p>
           </div>
         </div>
-
-        {/* <div className={styles.grid}>
-          <a href='https://nextjs.org/docs' className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href='https://nextjs.org/learn' className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href='https://github.com/vercel/next.js/tree/master/examples' className={styles.card}>
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href='https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div> */}
       </main>
 
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
           target='_blank'
           rel='noopener noreferrer'
         >
           Powered by <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
-        </a>
+        </a> */}
+        Powered by JJFIGUEROA
       </footer>
     </div>
     // <>
