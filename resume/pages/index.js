@@ -72,9 +72,9 @@ export default function Home() {
                 alignItems="center"
               >
                 <img
-                  src="images/17651-1.jpg"
+                  src="images/jjfigueroa.jpg"
                   style={{
-                    width: "50%",
+                    width: "40%",
                     margin: "1rem",
                     border: "solid 2px #f3f3f3",
                     borderRadius: "100%",
